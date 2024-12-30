@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>드롭다운 메뉴</title>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    height: 120px;
+}
+.header1{
+    height: 50%;
+    background-color: white;
+}
+.aside{
+    position: absolute;
+    top : 60px;
+    right: 0px;
+    height: 60px;
+    width: 120px;
+    color: white;
+    float: right;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header2{
+    height: 50%;
+    background-color: darkblue;
+}
+.Menu{
+    list-style: none;
+    display: flex;
+}
+.Menu1, .Menu2, .Menu3, .Menu4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 60px;
+}
+.Menu1:hover, .Menu2:hover, .Menu3:hover{
+    background-color: orange;
+}
+.Menu1:hover .Menu1-sub,.Menu2:hover .Menu2-sub, .Menu3:hover .Menu3-sub{
+    list-style: none;
+    position: absolute;
+    top: 120px;
+    display: block;
+    background-color: green;
+    width: 120px;
+}
+.Menu1-sub, .Menu2-sub, .Menu3-sub{
+    display: none;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="header1"></div>
+    <div class="header2">
+        <ul style="color: white;" class="Menu">
+            <li class="Menu1">Menu1
+                <ul class="Menu1-sub">
+                    <li>Menu1-1</li>
+                    <li>Menu1-2</li>
+                    <li>Menu1-3</li>
+                    <li>Menu1-4</li>
+                </ul> 
+            </li>
+            <li class="Menu2">Menu2
+                <ul class="Menu2-sub">
+                    <li>Menu2-1</li>
+                    <li>Menu2-2</li>
+                    <li>Menu2-3</li>
+                    <li>Menu2-4</li>
+                </ul> 
+            </li>
+            <li class="Menu3">Menu3
+                <ul class="Menu3-sub">
+                    <li>Menu3-1</li>
+                    <li>Menu3-2</li>
+                    <li>Menu3-3</li>
+                </ul> 
+            </li>
+            <li class="Menu4">Menu4</li>
+        </ul>
+        <div class="aside">home</div>
+    </div>
+</div>
+</body>
+</html>

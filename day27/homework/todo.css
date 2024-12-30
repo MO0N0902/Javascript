@@ -1,0 +1,55 @@
+/* todo.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+header {
+    background-color: lightslategray;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+h2{
+    text-align: center;
+}
+
+nav ul li {
+    border-bottom: 1px solid white;
+    padding: 6px;
+    display: inline;
+    margin: 0 10px;
+    font-weight: bold;
+}
+main{
+    margin: auto;
+    box-shadow: 1px 1px 1px 1px gray;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+}
+main ul{
+    font-weight: bold;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li a{
+    color: white;
+    padding: 20px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+} 
