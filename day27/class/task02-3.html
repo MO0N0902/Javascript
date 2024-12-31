@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const name3 = prompt('이름을 입력하세요')
+    const score3 = prompt('점수를 입력하세요')
+    function checkGrade2(score3){
+if(score3>=90){
+    return 'A'
+}else if(score3>=80){
+    return 'B'
+}else if(score3>=70){
+    return 'C'
+}else{
+    return 'F'
+}
+};
+document.write(name3+'님의 학점은 ' +checkGrade2(score3) + '입니다');
+  </script>
+
+</body>
+</html>
+<!-- /3. 학생의 이름과 성적을 입력받아서 성적에 따른 학점 출력
+// 90점 이상 : A, 80점 이상 : B,  70점이상 : C, 그외 : F -->
