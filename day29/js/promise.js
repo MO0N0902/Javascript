@@ -60,12 +60,12 @@ function register(user){
     getResult(user),
   ]);
   //resultAsync Promise 객체가 이행될 때 실행
-  resultAsync.then(console.log).catch((error) => { console.log("사용자 등록 실패", error.message)});
+  resultAsync.then(console.log).catch((a) => { console.log("사용자 등록 실패", a.message)});
 }
 
 //사용자 등록 함수 호출
 register({
-  name : "홍길동",
+  name : "",
   email : "hong111@gmail.com",
 });
 

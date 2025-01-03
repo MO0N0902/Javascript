@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 15vh;
+  background-color: lightsteelblue;
+}
+main{
+  height: 70vh;
+  background-color: cadetblue;
+}
+footer{
+  height: 15vh;
+  background-color: lightsteelblue;
+}
+header div{
+height: 75%;
+}
+nav{
+  height: 25%;
+  display: flex;
+  background-color: aquamarine;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+}
+nav ul li{
+  padding: 20px;
+  font-weight: bold;
+}
+.sub-menu--ul{
+  display: none;
+}
+.menu2:hover .sub-menu{
+  list-style: none;
+  display: block;
+  background-color: green;
+  width: 120px;
+}
